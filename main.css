@@ -496,7 +496,7 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.contact-buttons .btn {
+.contact-buttons .btn-contact {
   display: inline-block;
   padding: 12px 24px;
   border-radius: 8px;
@@ -506,22 +506,14 @@ a:hover {
   animation: floatFrame 2s ease-in-out infinite;
 }
 
-.contact-buttons .btn.primary {
+.contact-buttons .btn-contact {
   background-color: var(--primary-color);
   color: var(--background-color);
 }
 
-.contact-buttons .btn.primary:hover {
+.contact-buttons .btn-contact:hover {
   background-color: #eaf0ff;
-}
-
-.contact-buttons .btn.secondary {
-  background-color: var(--primary-color);
-  color: var(--background-color);
-}
-
-.contact-buttons .btn.secondary:hover {
-  background-color: #eaf0ff;
+  color: var(--primary-color);
 }
 
 /* --- Redes Sociais (igual ao Contact) --- */
@@ -539,14 +531,14 @@ a:hover {
   line-height: 1.5;
 }
 
-.social-medias-buttons {
+.social-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
 }
 
-.social-medias-buttons .btn {
+.social-buttons .btn-social {
   display: inline-block;
   padding: 12px 24px;
   border-radius: 8px;
@@ -558,9 +550,9 @@ a:hover {
   color: var(--background-color);
 }
 
-.social-medias-buttons .btn:hover {
+.social-buttons .btn-social:hover {
   background-color: #eaf0ff;
-  color: var(--background-color);
+  color: var(--primary-color);
 }
 
 /* mesmo efeito flutuante do Contact */
