@@ -1,14 +1,18 @@
 # amfp.dev — Portfólio
 
-Portfólio pessoal de **Angélica Feitosa**, desenvolvedora de software com foco em sistemas, banco de dados e análise de dados.
+Portfólio pessoal de **Angélica Feitosa**, analista de dados e desenvolvedora de sistemas.
 
 🔗 [portfolioamfpdev.netlify.app](https://portfolioamfpdev.netlify.app)
 
 ## Sobre
 
-Site estático de página única (single page) apresentando quem sou, minhas especialidades e os sistemas que já entreguei — do modelo de dados à interface final.
+Site estático de página única (single page) apresentando quem sou, minhas especialidades e os sistemas que já entreguei — do banco de dados à tomada de decisão.
 
-## Stack
+## Tecnologias
+
+Python · SQL · Java · Spring Boot · JavaScript · pandas · DuckDB · Git · PostgreSQL · SQLite
+
+## Stack do site
 
 - HTML5
 - CSS3 (sem frameworks — variáveis nativas, Grid e Flexbox)

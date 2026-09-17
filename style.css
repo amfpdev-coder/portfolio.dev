@@ -273,8 +273,16 @@ body::before {
     color: var(--texto-muted);
     max-width: 500px;
     line-height: 1.75;
-    margin-bottom: 2.75rem;
+    margin-bottom: 2rem;
     font-weight: 300;
+}
+
+.hero-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 560px;
+    margin-bottom: 2.75rem;
 }
 
 .hero-cta {
