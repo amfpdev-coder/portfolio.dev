@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Angélica Feitosa — Analista de Dados | Desenvolvedora de Sistemas</title>
+        <title>Portfólio Angélica Feitosa</title>
         <link
             rel="icon"
             type="image/svg+xml"
-            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff7a45'/%3E%3Cstop offset='1' stop-color='%23ff3d81'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='42' fill='url(%23g)'/%3E%3C/svg%3E"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23b8623d'/%3E%3Cstop offset='1' stop-color='%23582d1a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='26' fill='url(%23g)'/%3E%3Ctext x='50' y='71' font-family='Arial,Helvetica,sans-serif' font-size='70' font-weight='700' fill='white' text-anchor='middle'%3Ea.%3C/text%3E%3C/svg%3E"
         />
         <meta
             name="description"
@@ -20,12 +20,23 @@
             property="og:description"
             content="Portfólio de Angélica Feitosa, analista de dados e desenvolvedora de sistemas. Do banco de dados à tomada de decisão."
         />
-        <meta property="og:image" content="https://amfp.dev/assets/eu-3x4.png" />
+        <meta property="og:image" content="https://amfp.dev/assets/eu.png" />
         <meta property="og:locale" content="pt_BR" />
+        <meta name="theme-color" content="#f5eee6" />
+        <script>
+            (function () {
+                var t = 'light';
+                try {
+                    t = localStorage.getItem('tema') ||
+                        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                } catch (e) {}
+                document.documentElement.setAttribute('data-theme', t);
+            })();
+        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
             rel="stylesheet"
         />
         <link
@@ -39,56 +50,79 @@
         <!-- NAVEGAÇÃO -->
         <nav id="navbar">
             <a class="nav-logo" href="#hero">amfp<span>.</span>dev</a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#especialidades">Especialidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Sobre</span></a></li>
+                <li><a href="#especialidades"><i class="fa-solid fa-layer-group" aria-hidden="true"></i><span>Especialidades</span></a></li>
+                <li><a href="#projetos"><i class="fa-solid fa-folder-open" aria-hidden="true"></i><span>Projetos</span></a></li>
+                <li><a href="#contato"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Contato</span></a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="#contato" class="nav-cta">Vamos conversar <span>↗</span></a>
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Mudar para o tema escuro" aria-pressed="false">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                </button>
+            </div>
         </nav>
 
         <!-- HERO -->
         <section id="hero">
-            <div class="hero-overlay"></div>
             <div class="hero-inner">
-                <img
-                    src="assets/eu-3x4.png"
-                    alt="Angélica Feitosa"
-                    class="hero-avatar"
-                />
-                <div class="hero-tag">
-                    <span class="dot"></span> Disponível para projetos
+
+                <div class="hero-text">
+                    <h1 class="hero-name">
+                        <span class="line1">Angélica</span>
+                        <span class="line2">Feitosa<span class="br">.</span></span>
+                    </h1>
+                    <p class="hero-titulo">Analista de Dados | Desenvolvedora de Sistemas</p>
+                    <p class="hero-sub">
+                        Construo sistemas e analiso dados —
+                        do banco de dados à tomada de decisão.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projetos" class="btn-primary">Ver projetos</a>
+                        <a href="#contato" class="btn-ghost">Entrar em contato</a>
+                    </div>
                 </div>
-                <h1 class="hero-name">
-                    <span class="line1">Angélica</span>
-                    <span class="line2">Feitosa<span class="br">.</span></span>
-                </h1>
-                <p class="hero-titulo">Analista de Dados | Desenvolvedora de Sistemas</p>
-                <p class="hero-sub">
-                    Construo sistemas e analiso dados —
-                    do banco de dados à tomada de decisão.
-                </p>
+
+                <div class="hero-visual">
+                    <img
+                        src="assets/eu.png"
+                        alt="Angélica Feitosa"
+                        class="hero-avatar"
+                    />
+                    <div class="hero-card">
+                        <div class="hero-tag">
+                            <span class="dot"></span> Disponível para projetos
+                        </div>
+                        <p>Atendendo clientes que precisam de soluções sob medida.</p>
+                        <a
+                            href="https://github.com/amfpdev-coder"
+                            target="_blank"
+                            rel="noopener"
+                            class="hero-card-link"
+                        >
+                            <span class="hero-card-arrow">↗</span> github.com/amfpdev-coder
+                        </a>
+                    </div>
+                </div>
+
                 <div class="hero-stack">
-                    <span class="tag">Python</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">Java</span>
-                    <span class="tag">Spring Boot</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">pandas</span>
-                    <span class="tag">DuckDB</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">PostgreSQL</span>
-                    <span class="tag">SQLite</span>
+                    <span class="stack-label">Tecnologias</span>
+                    <div class="stack-list">
+                        <span class="stack-item">Python</span>
+                        <span class="stack-item">SQL</span>
+                        <span class="stack-item">Java</span>
+                        <span class="stack-item">Spring Boot</span>
+                        <span class="stack-item">JavaScript</span>
+                        <span class="stack-item">pandas</span>
+                        <span class="stack-item">DuckDB</span>
+                        <span class="stack-item">Git</span>
+                        <span class="stack-item">PostgreSQL</span>
+                        <span class="stack-item">SQLite</span>
+                    </div>
                 </div>
-                <div class="hero-cta">
-                    <a href="#projetos" class="btn-primary">Ver projetos</a>
-                    <a href="#contato" class="btn-ghost">Entrar em contato</a>
-                </div>
+
             </div>
         </section>
 
@@ -212,15 +246,29 @@
         <!-- PROJETOS -->
         <section id="projetos">
 
-            <div class="section-label">Cases</div>
+            <div class="section-head">
+                <div>
+                    <div class="section-label">Cases</div>
 
-            <h2 class="section-title reveal">
-                Sistemas construídos<br />do zero.
-            </h2>
+                    <h2 class="section-title reveal">
+                        Sistemas construídos<br />do zero.
+                    </h2>
+                </div>
+                <a
+                    href="https://github.com/amfpdev-coder"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn-ghost"
+                >Ver todos no GitHub <span>↗</span></a>
+            </div>
 
             <div class="projetos-lista">
 
                 <article class="projeto-card reveal">
+                    <div class="projeto-thumb thumb-desktop">
+                        <span class="projeto-cat">Desktop</span>
+                        <span class="projeto-thumb-label">Electron + SQLite</span>
+                    </div>
                     <div class="projeto-body">
                         <div class="projeto-badge destaque">✦ Projeto em destaque</div>
                         <h3 class="projeto-titulo">Sistema Pizzaria Carioca</h3>
@@ -249,6 +297,90 @@
                     </div>
                 </article>
 
+                <article class="projeto-card reveal">
+                    <div class="projeto-thumb thumb-dados">
+                        <span class="projeto-cat">Análise de Dados</span>
+                        <span class="projeto-thumb-label">Python + DuckDB</span>
+                    </div>
+                    <div class="projeto-body">
+                        <div class="projeto-badge">Desafio Indicium</div>
+                        <h3 class="projeto-titulo">LH Nautical — Análise de Dados</h3>
+                        <p class="projeto-desc">
+                            Desafio técnico da <strong>Lighthouse</strong>, programa da
+                            Indicium, simulando uma empresa náutica com dados de
+                            e-commerce e ponto de venda. Pipeline completo de dados —
+                            da modelagem ao insight — a partir de um dataset com
+                            <strong>24 tabelas CSV</strong>.
+                        </p>
+                        <p class="projeto-desc">
+                            Exploração e estatísticas descritivas, modelagem dimensional,
+                            carga e validação com DuckDB, análise de clientes fiéis,
+                            faturamento POS por dia da semana, previsão de demanda com
+                            média móvel e sistema de recomendação por similaridade de
+                            cosseno.
+                        </p>
+                        <div class="projeto-stack">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">DuckDB</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Jupyter Notebook</span>
+                        </div>
+                    </div>
+                    <div class="projeto-meta">
+                        <span class="projeto-ano">Outubro 2026</span>
+                        <a
+                            href="https://github.com/amfpdev-coder"
+                            target="_blank"
+                            rel="noopener"
+                            class="projeto-link"
+                            title="Ver no GitHub"
+                        >↗</a>
+                    </div>
+                </article>
+
+                <article class="projeto-card reveal">
+                    <div class="projeto-thumb thumb-web">
+                        <span class="projeto-cat">Web</span>
+                        <span class="projeto-thumb-label">HTML · CSS · JS</span>
+                    </div>
+                    <div class="projeto-body">
+                        <h3 class="projeto-titulo">Amigo Secreto</h3>
+                        <p class="projeto-desc">
+                            Aplicação web de sorteio de amigo secreto com
+                            <strong>revelação privada</strong> — cada participante vê
+                            apenas o seu próprio resultado, sem expor os pares dos demais.
+                        </p>
+                        <p class="projeto-desc">
+                            Cadastro com validação de nomes únicos, algoritmo de
+                            <strong>derangement</strong> (ninguém tira a si mesmo),
+                            revelação individual por clique, controle de quem já
+                            visualizou e botão de reiniciar com confirmação. Design em
+                            <strong>glassmorphism</strong> com paleta rosé, vinho e
+                            dourado. Layout responsivo para mobile e desktop.
+                        </p>
+                        <p class="projeto-desc">
+                            <strong>3 telas:</strong> Cadastro de participantes →
+                            Seleção por nome → Revelação privada
+                        </p>
+                        <div class="projeto-stack">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="projeto-meta">
+                        <a
+                            href="https://github.com/amfpdev-coder"
+                            target="_blank"
+                            rel="noopener"
+                            class="projeto-link"
+                            title="Ver no GitHub"
+                        >↗</a>
+                    </div>
+                </article>
+
             </div>
 
         </section>
@@ -268,25 +400,15 @@
                     <p>
                         Estou disponível para novos projetos. Se você tem
                         uma ideia, um problema para resolver ou precisa de
-                        um sistema feito sob medida, me manda uma mensagem.
+                        um sistema feito sob medida, fale com a Marina.
                     </p>
                     <div class="social-links">
-                        <a href="https://github.com/amfpdev-coder" target="_blank" rel="noopener" class="social-link">
-                            <span class="social-icon">⌥</span>
-                            <span>GitHub</span>
-                            <span class="arrow">↗</span>
-                        </a>
                         <a href="https://linkedin.com/in/amfpdev" target="_blank" rel="noopener" class="social-link">
                             <span class="social-icon">in</span>
                             <span>LinkedIn</span>
                             <span class="arrow">↗</span>
                         </a>
-                        <a href="https://behance.net/anglicfeitosa" target="_blank" rel="noopener" class="social-link">
-                            <span class="social-icon">Be</span>
-                            <span>Behance</span>
-                            <span class="arrow">↗</span>
-                        </a>
-                        <a href="https://www.figma.com/@angelicafeitosa" target="_blank" rel="noopener" class="social-link">
+                        <a href="https://www.figma.com/@amfpdev" target="_blank" rel="noopener" class="social-link">
                             <span class="social-icon">Fi</span>
                             <span>Figma</span>
                             <span class="arrow">↗</span>
@@ -294,41 +416,15 @@
                     </div>
                 </div>
 
-                <div class="contato-form-wrap reveal">
-                    <form class="contato-form" id="contato-form">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Seu nome"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="seu@email.com"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                placeholder="Me conta o que você precisa..."
-                                required
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">
-                            Enviar mensagem →
-                        </button>
-                    </form>
+                <div class="contato-bot reveal">
+                    <div class="contato-bot-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+                    <h3>Converse com a Marina</h3>
+                    <p>
+                        Responda algumas perguntas rápidas e receba um rascunho
+                        de proposta em PDF. No final, você pode me chamar
+                        direto no WhatsApp.
+                    </p>
+                    <button type="button" class="btn-primary" data-open-bot>Iniciar conversa</button>
                 </div>
 
             </div>
@@ -344,6 +440,31 @@
             </p>
         </footer>
 
+        <!-- ASSISTENTE DE PROPOSTAS -->
+        <button class="bot-fab" id="bot-fab" aria-label="Abrir a conversa com a Marina para gerar uma proposta" aria-expanded="false" aria-controls="bot-panel">
+            <i class="fa-solid fa-robot" aria-hidden="true"></i>
+            <span>Gerar proposta</span>
+        </button>
+
+        <div class="bot-panel" id="bot-panel" role="dialog" aria-label="Marina, assistente de propostas">
+            <div class="bot-head">
+                <div class="bot-avatar"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+                <div class="bot-head-text">
+                    <strong>Marina</strong>
+                    <span>Assistente da amfp.dev · proposta em 2 minutos</span>
+                </div>
+                <button class="bot-close" id="bot-close" aria-label="Fechar a conversa">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="bot-log" id="bot-log" aria-live="polite"></div>
+            <div class="bot-controls" id="bot-controls"></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="proposta-pdf.js"></script>
+        <script src="fundo.js"></script>
+        <script src="assistente.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

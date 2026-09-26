@@ -17,14 +17,17 @@ Python · SQL · Java · Spring Boot · JavaScript · pandas · DuckDB · Git ·
 - HTML5
 - CSS3 (sem frameworks — variáveis nativas, Grid e Flexbox)
 - JavaScript vanilla (sem bibliotecas)
-- Fontes: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk), [Inter](https://fonts.google.com/specimen/Inter) e [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) via Google Fonts
+- Fonte: [DM Sans](https://fonts.google.com/specimen/DM+Sans) via Google Fonts
 
 ## Estrutura
 
 ```
 index.html    → estrutura e conteúdo do site
-style.css     → estilos (tema dark com acentos em gradiente)
-script.js     → interações (scroll reveal, navegação, formulário de contato)
+style.css     → estilos (tema claro pêssego com acentos em coral)
+script.js     → interações (tema claro/escuro, scroll reveal e destaque da seção ativa na navegação)
+fundo.js      → fundo animado em canvas (rede de pontos, formas geométricas e brilhos)
+assistente.js → robô guiado que monta o pedido de proposta e envia via Formspree
+proposta-pdf.js → gera o rascunho de proposta em PDF (jsPDF), sem valores
 assets/       → imagens
 ```
 
