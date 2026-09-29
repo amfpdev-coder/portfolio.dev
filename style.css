@@ -720,7 +720,7 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 2.5rem;
-    align-items: stretch;
+    align-items: start;
 }
 
 .projeto-card {
@@ -755,7 +755,7 @@ section {
 
 .thumb-desktop { background: linear-gradient(135deg, #e0a082, #b8623d); }
 .thumb-dados   { background: linear-gradient(135deg, #8a9a4a, #5f6f25); }
-.thumb-web     { background: linear-gradient(135deg, #b0714f, #6f3a20); }
+.thumb-web     { background: linear-gradient(135deg, #6f8fc9, #2e4d80); }
 
 .projeto-thumb::before {
     content: '';
