@@ -1,5 +1,6 @@
 # Ignorar configurações locais e cache
 .vscode/
+.claude/
 node_modules/
 dist/
 build/

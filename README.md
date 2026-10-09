@@ -21,13 +21,13 @@ Python · SQL · Java · Spring Boot · JavaScript · pandas · DuckDB · Git ·
 
 ## Estrutura
 
-```
+```text
 index.html    → estrutura e conteúdo do site
 style.css     → estilos (tema claro pêssego com acentos em coral)
 script.js     → interações (tema claro/escuro, scroll reveal e destaque da seção ativa na navegação)
 fundo.js      → fundo animado em canvas (rede de pontos, formas geométricas e brilhos)
-assistente.js → robô guiado que monta o pedido de proposta e envia via Formspree
-proposta-pdf.js → gera o rascunho de proposta em PDF (jsPDF), sem valores
+assistente.js → Marina: pergunta nome/empresa, manda para o Google Forms e aguarda a resposta numa planilha publicada (CSV)
+proposta-pdf.js → gera a proposta final em PDF (jsPDF), sem valores, com wireframes de referência em média-alta fidelidade (cantos arredondados, sombra, cores e rótulos reais)
 assets/       → imagens
 ```
 
